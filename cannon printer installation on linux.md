@@ -26,6 +26,9 @@
 4. Add Printer using the following commands
     ```bash
     sudo lpadmin -p LBP2900 -m CNCUPSLBP2900CAPTK.ppd -v ccp://localhost:59787 –E
+    or
+    sudo /usr/sbin/lpadmin -p LBP2900 -m CNCUPSLBP2900CAPTK.ppd -v ccp:/var/ccpd/fifo0 -E
+    
     sudo ccpdadmin -p LBP2900 -o /dev/usb/lp0
     sudo /etc/init.d/ccpd start
     ```
